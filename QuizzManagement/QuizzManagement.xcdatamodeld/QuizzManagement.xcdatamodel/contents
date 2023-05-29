@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H1824" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="answer1" optional="YES" attributeType="String"/>
+        <attribute name="answer2" optional="YES" attributeType="String"/>
+        <attribute name="answer3" optional="YES" attributeType="String"/>
+        <attribute name="answer4" optional="YES" attributeType="String"/>
+        <attribute name="correctAnswer" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <relationship name="to_one" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Topic"/>
+    </entity>
+    <entity name="Topic" representedClassName="Topic" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Question" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Topic" positionX="-54" positionY="36" width="128" height="58"/>
+    </elements>
+</model>
